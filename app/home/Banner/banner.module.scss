@@ -1,0 +1,27 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0 60 38);
+    color: white;
+    padding: 8px 100px;
+    font-size: 12px;
+
+    .phone {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .offers {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .langLoc {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
