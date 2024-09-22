@@ -12,10 +12,13 @@
 
     .products {
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
+        flex-wrap: wrap;        
+
+        .itemCardContainer {
+            width: 25%;            
+        }
     }
 
 }

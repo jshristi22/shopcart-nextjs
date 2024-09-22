@@ -2,6 +2,7 @@ import React from "react";
 import ItemCard, { IItemData } from "./components/item_card/item_card";
 
 import styles from "./product_list.module.scss";
+import Link from "next/link";
 
 async function ProductList() {
   const response = await fetch("https://fakestoreapi.com/products", {
@@ -22,10 +23,13 @@ async function ProductList() {
   return (
     <div className={styles.productList}>
       <p className={styles.title}>Headphones for You!</p>
-
       <div className={styles.products}>
         {data?.map((item) => (
-          <ItemCard key={item.id} data={item} />
+          <div key={item.id} className={styles.itemCardContainer}>
+            <Link href={`/home/product/${item.id}`}>
+              <ItemCard data={item} />
+            </Link>
+          </div>
         ))}
       </div>
     </div>

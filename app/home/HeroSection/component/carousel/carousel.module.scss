@@ -1,7 +1,8 @@
 .carousel {
     img {
         width: 100%;
-        object-fit: contain;
+        height: 500px;
+        object-fit: cover;
         border-radius: 20px;        
     }
 }
